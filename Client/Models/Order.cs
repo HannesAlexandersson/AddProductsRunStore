@@ -12,4 +12,5 @@ public record Order
 
     public required Customer Customer { get; set; }
     public List<Product> Items { get; set; } = [];
+    public int TotalSum { get; set; }
 }
