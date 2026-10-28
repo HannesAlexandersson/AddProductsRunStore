@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\Client.csproj": {}
+    "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\Client.csproj": {
+    "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\s1031\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\obj\\",
+        "projectPath": "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\yokoj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s1031\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\yokoj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
