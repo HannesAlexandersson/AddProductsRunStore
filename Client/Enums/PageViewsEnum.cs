@@ -7,5 +7,6 @@ public enum PageViewsEnum
     AddProduct,
     EditProduct,
     Customers,
+    Orders
     AddOrder
 }

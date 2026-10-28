@@ -40,6 +40,10 @@
                             <Label Content="Kunder" />
                         </StackPanel>
                     </Button>
+                    <Button Command="{Binding GoToOrdersCommand}" >
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <Label Padding="0 6" FontFamily="{DynamicResource IconFont}" Content="&#xe41e;" />
+                            <Label Content="Beställningar" />
                     <Button Command="{Binding GoToAddOrderCommand}" >
                         <StackPanel Orientation="Horizontal" Spacing="10">
                             <Label Padding="0 6" FontFamily="{DynamicResource IconFont}" Content="&#xed60;" />
