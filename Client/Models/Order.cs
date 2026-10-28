@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Client.Models;
 
-public class Order
+public record Order
 {
-    public string OrderId { get; set; } = Guid.NewGuid().ToString();
-    public DateTime OrderDate { get; set; } = new DateTime();
+    public string Id { get; set; } = Guid.NewGuid().ToString();
+
+    public Guid OrderId { get; set; } = Guid.NewGuid();
+    public DateTime OrderDate { get; set; } = DateTime.UtcNow;
+
     public required Customer Customer { get; set; }
-    public required List<OrderProduct> Items { get; set; }
-    public int TotalSum => Items.Sum(item => item.Price);
+    public List<Product> Items { get; set; } = [];
 }
