@@ -6,6 +6,7 @@ namespace Client.Models;
 public record Order
 {
     public string Id { get; set; } = Guid.NewGuid().ToString();
+
     public string OrderId { get; set; } = Guid.NewGuid().ToString();
     public DateTime OrderDate { get; set; } = DateTime.UtcNow;
 
