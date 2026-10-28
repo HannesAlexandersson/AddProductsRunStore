@@ -17,16 +17,24 @@ public partial class ProductsViewModel : ViewModelBase
     [ObservableProperty]
     public partial ObservableCollection<Product> Products { get; set; } = [];
 
+    [ObservableProperty]
+    public partial bool ShowDialog { get; set; }
+
+    public string DeleteId { get; set; }
+
     public ProductsViewModel()
     {
         _productService = new ProductServices();
         PageTitle = "Våra produkter";
+        DeleteId = "";
         Init();
     }
+
     public ProductsViewModel(IProductService productService)
     {
         _productService = productService;
         PageTitle = "Våra produkter";
+        DeleteId = "";
 
         // Task.Run(()=> LoadProducts()).Wait();
         Init();
@@ -37,12 +45,8 @@ public partial class ProductsViewModel : ViewModelBase
     {
         try
         {
-            ProductRestDb product = await _productService.Find(id);
-            if (product is not null)
-            {
-                await _productService.Delete(product._id);
-                await LoadProducts();
-            }
+            ShowDialog = true;
+            DeleteId = id;
         }
         catch (Exception ex)
         {
@@ -53,6 +57,27 @@ public partial class ProductsViewModel : ViewModelBase
     private async void Init()
     {
         await LoadProducts();
+    }
+
+    [RelayCommand]
+    private async Task Confirm()
+    {
+        Console.WriteLine("Tar bort produkten");
+        ShowDialog = false;
+
+        ProductRestDb product = await _productService.Find(DeleteId);
+        if (product is not null)
+        {
+            await _productService.Delete(product._id);
+            await LoadProducts();
+        }
+    }
+
+    [RelayCommand]
+    private void Cancel()
+    {
+        Console.WriteLine("Jasååå, du ångrar dig fegis!");
+        ShowDialog = false;
     }
 
     private async Task LoadProducts()
@@ -67,8 +92,3 @@ public partial class ProductsViewModel : ViewModelBase
         }
     }
 }
-
-
-
-
-
