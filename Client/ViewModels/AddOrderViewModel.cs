@@ -37,7 +37,9 @@ public partial class AddOrderViewModel : ViewModelBase
             },
             Items =
 [
-    new Product
+    new OrderProduct
+{
+    Product = new()
     {
         Id = Guid.NewGuid().ToString(),
         Description = "Test beskrivinging",
@@ -47,8 +49,12 @@ public partial class AddOrderViewModel : ViewModelBase
         SupplierName = "Testbolaget",
         Price = 500
     },
-    new Product
+    Quantity = 1,
+    LineSum = 500
+},
+    new OrderProduct
     {
+         Product = new(){
         Id = Guid.NewGuid().ToString(),
         Description = "Test beskrivinging2",
         ImageUrl = "www.test.se",
@@ -56,6 +62,9 @@ public partial class AddOrderViewModel : ViewModelBase
         Name = "Test produkt2",
         SupplierName = "Testbolaget2",
         Price = 600
+         },
+         Quantity = 1,
+        LineSum = 600
     }
 ],
             TotalSum = 0
@@ -64,7 +73,7 @@ public partial class AddOrderViewModel : ViewModelBase
 
         foreach (var item in order.Items)
         {
-            order.TotalSum += item.Price;
+            order.TotalSum += item.LineSum;
         }
 
         await _orderService.Add(order);

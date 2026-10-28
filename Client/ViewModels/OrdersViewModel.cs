@@ -32,6 +32,7 @@ public partial class OrdersViewModel : ViewModelBase
         try
         {
             Orders = new ObservableCollection<Order>(await _orderService.List());
+
         }
         catch (System.Exception)
         {
