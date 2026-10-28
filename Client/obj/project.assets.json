@@ -2390,19 +2390,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s1031\\.nuget\\packages\\": {}
+    "C:\\Users\\Jonte\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\Jonte\\Documents\\programmering\\github\\AddProductsRunStore\\Client\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\Client.csproj",
-      "packagesPath": "C:\\Users\\s1031\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s1031\\documents\\github\\Programmering_med_CSharp\\Lektion-26\\RunStore\\Client\\obj\\",
+      "projectPath": "C:\\Users\\Jonte\\Documents\\programmering\\github\\AddProductsRunStore\\Client\\Client.csproj",
+      "packagesPath": "C:\\Users\\Jonte\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jonte\\Documents\\programmering\\github\\AddProductsRunStore\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\s1031\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jonte\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
