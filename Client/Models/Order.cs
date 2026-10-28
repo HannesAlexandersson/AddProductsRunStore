@@ -11,6 +11,6 @@ public record Order
     public DateTime OrderDate { get; set; } = DateTime.UtcNow;
 
     public required Customer Customer { get; set; }
-    public List<Product> Items { get; set; } = [];
+    public List<OrderProduct> Items { get; set; } = [];
     public int TotalSum { get; set; }
 }

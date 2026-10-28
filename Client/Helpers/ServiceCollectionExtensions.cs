@@ -22,5 +22,6 @@ public static class ServiceCollectionExtensions
         collection.AddTransient<CustomersViewModel>();
         collection.AddTransient<OrdersViewModel>();
         collection.AddTransient<IProductService, ProductServices>();
+        collection.AddTransient<IOrderService, OrderServices>();
     }
 }
