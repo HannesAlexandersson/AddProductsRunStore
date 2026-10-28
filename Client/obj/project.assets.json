@@ -2390,24 +2390,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jonte\\.nuget\\packages\\": {}
+    "C:\\Users\\yokoj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonte\\Documents\\programmering\\github\\AddProductsRunStore\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "C:\\Users\\Jonte\\Documents\\programmering\\github\\AddProductsRunStore\\Client\\Client.csproj",
-      "packagesPath": "C:\\Users\\Jonte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonte\\Documents\\programmering\\github\\AddProductsRunStore\\Client\\obj\\",
+      "projectPath": "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\Client.csproj",
+      "packagesPath": "C:\\Users\\yokoj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yokoj\\Documents\\Iths\\Runstore-GruppProject\\AddProductsRunStore\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jonte\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\yokoj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
