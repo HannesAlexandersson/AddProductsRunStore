@@ -20,6 +20,7 @@ public static class ServiceCollectionExtensions
         collection.AddTransient<HomeViewModel>();
         collection.AddTransient<ProductsViewModel>();
         collection.AddTransient<CustomersViewModel>();
+        collection.AddTransient<OrdersViewModel>();
         collection.AddTransient<IProductService, ProductServices>();
     }
 }

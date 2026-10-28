@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Client.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Client.Views.OrdersView"
+             x:DataType="vm:OrdersViewModel">
+
+             <Design.DataContext>
+              <vm:OrdersViewModel></vm:OrdersViewModel>
+             </Design.DataContext>
+
+  <StackPanel>
+  <TextBlock Classes="pageTitle" Text="{Binding PageTitle}" />
+
+  <Border BorderBrush="White" BorderThickness="0 0 0 1" Padding="0 50 0 5">
+    <Grid ColumnDefinitions="200,200,200,200,200,*">
+      <Label Grid.Column="0" Content="Order Id" />
+      <Label Grid.Column="1" Content="Datum" />
+      <Label Grid.Column="2" Content="Förnamn" />
+      <Label Grid.Column="3" Content="Eftermamn" />
+      <Label Grid.Column="4" Content="E-post" />
+      <Label Grid.Column="5" Content="Totalbelopp" />
+    </Grid>
+  </Border>
+
+  <ItemsControl ItemsSource="{Binding Orders}" Margin="0 10 0 0" >
+    <ItemsControl.ItemTemplate>
+      <DataTemplate>
+        <Grid ColumnDefinitions="200,200,200,200,200,*">
+          <Label Grid.Column="0" Content="{Binding OrderId}" />
+          <Label Grid.Column="1" Content="{Binding OrderDate}" />
+          <Label Grid.Column="2" Content="{Binding Customer.FirstName}" />
+          <Label Grid.Column="3" Content="{Binding Customer.LastName}" />
+          <Label Grid.Column="4" Content="{Binding Customer.Email}" />
+          <Label Grid.Column="5" Content="{Binding TotalSum}" HorizontalAlignment="Right" />
+
+
+        </Grid>
+      </DataTemplate>
+    </ItemsControl.ItemTemplate>
+  </ItemsControl>
+</StackPanel>
+  
+</UserControl>
